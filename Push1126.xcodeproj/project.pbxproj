@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453A6AD36D3046CDBEE372E6 /* libPods-Push1126.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC839D5AF40395A09E385095 /* libPods-Push1126.a */; };
 		B2A47FCF1C06A6EA00D4B2E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A47FCE1C06A6EA00D4B2E7 /* main.m */; };
 		B2A47FD21C06A6EA00D4B2E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A47FD11C06A6EA00D4B2E7 /* AppDelegate.m */; };
-		B2A47FD51C06A6EA00D4B2E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A47FD41C06A6EA00D4B2E7 /* ViewController.m */; };
-		B2A47FD81C06A6EA00D4B2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A47FD61C06A6EA00D4B2E7 /* Main.storyboard */; };
 		B2A47FDA1C06A6EA00D4B2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A47FD91C06A6EA00D4B2E7 /* Assets.xcassets */; };
 		B2A47FDD1C06A6EA00D4B2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A47FDB1C06A6EA00D4B2E7 /* LaunchScreen.storyboard */; };
+		B2A47FE91C06A71C00D4B2E7 /* HomeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A47FE81C06A71C00D4B2E7 /* HomeTVC.m */; };
+		B2A47FEC1C06A72E00D4B2E7 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A47FEB1C06A72E00D4B2E7 /* HomeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1421D260FEAC949245ACD860 /* Pods-Push1126.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push1126.release.xcconfig"; path = "Pods/Target Support Files/Pods-Push1126/Pods-Push1126.release.xcconfig"; sourceTree = "<group>"; };
+		509AA3C3315E2AA06C839F75 /* Pods-Push1126.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push1126.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push1126/Pods-Push1126.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A47FCA1C06A6EA00D4B2E7 /* Push1126.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push1126.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A47FCE1C06A6EA00D4B2E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2A47FD01C06A6EA00D4B2E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2A47FD11C06A6EA00D4B2E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B2A47FD31C06A6EA00D4B2E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B2A47FD41C06A6EA00D4B2E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B2A47FD71C06A6EA00D4B2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2A47FD91C06A6EA00D4B2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2A47FDC1C06A6EA00D4B2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2A47FDE1C06A6EA00D4B2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2A47FE71C06A71C00D4B2E7 /* HomeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTVC.h; sourceTree = "<group>"; };
+		B2A47FE81C06A71C00D4B2E7 /* HomeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTVC.m; sourceTree = "<group>"; };
+		B2A47FEA1C06A72E00D4B2E7 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		B2A47FEB1C06A72E00D4B2E7 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		CC839D5AF40395A09E385095 /* libPods-Push1126.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Push1126.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453A6AD36D3046CDBEE372E6 /* libPods-Push1126.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19D7E38C97A31D87DA9F74C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				509AA3C3315E2AA06C839F75 /* Pods-Push1126.debug.xcconfig */,
+				1421D260FEAC949245ACD860 /* Pods-Push1126.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2CD869566C6A2AB0B41E02BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC839D5AF40395A09E385095 /* libPods-Push1126.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2A47FC11C06A6EA00D4B2E7 = {
 			isa = PBXGroup;
 			children = (
 				B2A47FCC1C06A6EA00D4B2E7 /* Push1126 */,
 				B2A47FCB1C06A6EA00D4B2E7 /* Products */,
+				B2A47FE71C06A71C00D4B2E7 /* HomeTVC.h */,
+				B2A47FE81C06A71C00D4B2E7 /* HomeTVC.m */,
+				B2A47FEA1C06A72E00D4B2E7 /* HomeCell.h */,
+				B2A47FEB1C06A72E00D4B2E7 /* HomeCell.m */,
+				19D7E38C97A31D87DA9F74C8 /* Pods */,
+				2CD869566C6A2AB0B41E02BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +89,6 @@
 			children = (
 				B2A47FD01C06A6EA00D4B2E7 /* AppDelegate.h */,
 				B2A47FD11C06A6EA00D4B2E7 /* AppDelegate.m */,
-				B2A47FD31C06A6EA00D4B2E7 /* ViewController.h */,
-				B2A47FD41C06A6EA00D4B2E7 /* ViewController.m */,
-				B2A47FD61C06A6EA00D4B2E7 /* Main.storyboard */,
 				B2A47FD91C06A6EA00D4B2E7 /* Assets.xcassets */,
 				B2A47FDB1C06A6EA00D4B2E7 /* LaunchScreen.storyboard */,
 				B2A47FDE1C06A6EA00D4B2E7 /* Info.plist */,
@@ -86,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2A47FE11C06A6EA00D4B2E7 /* Build configuration list for PBXNativeTarget "Push1126" */;
 			buildPhases = (
+				2126E253676A3F23BC65CDFB /* Check Pods Manifest.lock */,
 				B2A47FC61C06A6EA00D4B2E7 /* Sources */,
 				B2A47FC71C06A6EA00D4B2E7 /* Frameworks */,
 				B2A47FC81C06A6EA00D4B2E7 /* Resources */,
+				2648641CE198D4DF5A7957A0 /* Embed Pods Frameworks */,
+				D0BB0EB1A2CE40801E522202 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +139,12 @@
 				TargetAttributes = {
 					B2A47FC91C06A6EA00D4B2E7 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 8H7X36TF25;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,34 +173,74 @@
 			files = (
 				B2A47FDD1C06A6EA00D4B2E7 /* LaunchScreen.storyboard in Resources */,
 				B2A47FDA1C06A6EA00D4B2E7 /* Assets.xcassets in Resources */,
-				B2A47FD81C06A6EA00D4B2E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2126E253676A3F23BC65CDFB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2648641CE198D4DF5A7957A0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push1126/Pods-Push1126-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BB0EB1A2CE40801E522202 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push1126/Pods-Push1126-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2A47FC61C06A6EA00D4B2E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A47FD51C06A6EA00D4B2E7 /* ViewController.m in Sources */,
 				B2A47FD21C06A6EA00D4B2E7 /* AppDelegate.m in Sources */,
 				B2A47FCF1C06A6EA00D4B2E7 /* main.m in Sources */,
+				B2A47FEC1C06A72E00D4B2E7 /* HomeCell.m in Sources */,
+				B2A47FE91C06A71C00D4B2E7 /* HomeTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2A47FD61C06A6EA00D4B2E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2A47FD71C06A6EA00D4B2E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2A47FDB1C06A6EA00D4B2E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -194,7 +269,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.johnnyketchup.Push1126";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.johnnyketchup.Push1126";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -237,7 +313,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.johnnyketchup.Push1126";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.johnnyketchup.Push1126";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -259,23 +336,31 @@
 		};
 		B2A47FE21C06A6EA00D4B2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509AA3C3315E2AA06C839F75 /* Pods-Push1126.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Push1126/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyketchup.Push1126;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		B2A47FE31C06A6EA00D4B2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1421D260FEAC949245ACD860 /* Pods-Push1126.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Push1126/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyketchup.Push1126;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -298,6 +383,7 @@
 				B2A47FE31C06A6EA00D4B2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

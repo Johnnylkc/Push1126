@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeTVC.h"
+
+
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -15,10 +19,82 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+
+-(void)start
+{
+    
+    HomeTVC *homePage = [[HomeTVC alloc] init];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homePage];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = homeNav;
+    [self.window makeKeyAndVisible];
+
+    
+    
+    
+}
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+
+    HomeTVC *homePage = [[HomeTVC alloc] init];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homePage];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = homeNav;
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    [Parse setApplicationId:@"1AoMLPa5EtqwpWuqdpYMgW0FH5kC3boDH0aLjU2h" clientKey:@"BkDbKsKdXcnwrNle4JHoOVuzeOWOaib0Ku1lHgX6"];
+
+    
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+
+    
+    
     return YES;
 }
+
+
+
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    
+    //currentInstallation.channels = @[ @"global" ];
+
+    
+    [currentInstallation saveInBackground];
+}
+
+
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [PFPush handlePush:userInfo];
+
+    [self start];
+
+}
+
+
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -34,8 +110,16 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    ////開啟app後 讓bagde number消失歸零
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    if (currentInstallation.badge != 0) {
+        currentInstallation.badge = 0;
+        [currentInstallation saveEventually];
+    }
+
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
